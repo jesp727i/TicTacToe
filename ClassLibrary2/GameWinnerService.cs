@@ -63,7 +63,10 @@ namespace TicTacToe.Services
             {
                 return cellThreeChar;
             }
-            return SymbolForNoWinner;
+            else
+            {
+                return SymbolForNoWinner;
+            }
         }
         private char CheckForThreeInARowInHorizontalRow()
         {
@@ -80,7 +83,10 @@ namespace TicTacToe.Services
             {
                 return cellSevenChar;
             }
-            return ' ';
+            else
+            {
+                return SymbolForNoWinner;
+            }
         }
         private void setCells(char[,] gameBoard)
         {
